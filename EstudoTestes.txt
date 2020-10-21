@@ -1,0 +1,18 @@
+Testes de Unidades
+Framework de teste--> Jasmine
+Ferramenta de execução de Testes-->Karma
+
+Karma:
+Instalar karma cli (ver comando na internet, é um pacote NPM)(Permite executar os comandos karma de qualquer pasta do prompt)
+Para cada novo projeto voce  deve rodar na pasta do projeto  npm install karma (o comando de geração de app do angular já faz isso sozinho- ng new my-app). Também dentro da pasta do projeto você pode adicionar pluggins do karma que configuram como o karma irá funcionar para aquele projeto (Tambem o angular já faz isso para vc com o ng new my-app). Exemplos de pluggins. npm install karma-jasmine--> configura o karma para utilizar o jasmine como frameowrk de teste. npm install karma-chrome-launch--> configura o karma para exibir as execuções de testes no chrome. Obs: A instalação do Karma e os pluggins utilizados ficam no arquivo package.json do projeto
+karma init--> Modo interativo que  cria um arquivo karma.conf.js para você
+
+karma start--> lança o navegador e executa os testes
+karma run--> Depois que o servidor de teste esta ativo, esse comando executa novamente os testes
+------------------------------------------------------
+ng test--> executa os testes do karma pela ferramenta do angular cli
+
+
+Cobertura dos Testes:
+
+ng test --no-watch --code-coverage--> Cria uma pasta chamada coverage na raiz do projeto. No endereço coverage/teste/index.html conterá um relatório informando qual o porcentual de testes está cobrindo sua aplicação. Exemplo: Seus testes podem estar abrangindo 50% das possíveis coisas testaveis no seu app
